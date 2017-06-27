@@ -2,22 +2,22 @@ Topic: Classifying handwritten digits
 Author: Christos-Nikolaos Mitsopoulos
 Date: 06/10/2017
 
-*************** OVERVIEW ******************
+************************************************************ OVERVIEW ***************************************************************
 
 The files in this directory, classify handwritten digits by implementing the k-nearest neighbours algorithm as well as some basic image processing.
 
-********************************************
+**************************************************************************************************************************************
 
 
-************* DISCLAIMER ***************
+************************************************************ DISCLAIMER ************************************************************
 
 I strongly recommend using the GUI form of this project (details on how to run it below). If any problems with the GUI persist, please email me at mitsopouloschris@gmail.com as the GUI is a pivotal part of the project.
 
 Also, different computers display the GUI window with different sizes. For best performance and easy image selection, make the window pretty large (about the size of that in the sample video).
-**********************************************
+*************************************************************************************************************************************
 
 
-************** USEFUL DEFINITIONS **********
+*********************************************************** USEFUL DEFINITIONS *******************************************************
 
 1. Training Set: The images the classifier uses to compare the images it tries to classify with.
 
@@ -25,10 +25,10 @@ Also, different computers display the GUI window with different sizes. For best 
 
 3. k:  The number of closest training examples to the testing image at the moment. The algorithm then chooses the most seen digit in this selection of training images. 
 
-**********************************************
+****************************************************************************************************************************************
 
 
-************ WHERE TO START *****************
+********************************************************* WHERE TO START **************************************************************
 
 A good idea would be to watch the sample run video (link in powerpoint).
 1. First of all make sure you are in the Final Project directory and not in any subdirectory.
@@ -40,10 +40,10 @@ A good idea would be to watch the sample run video (link in powerpoint).
 4. Follow the GUI.
 5. Read more at GUI version section.
 
-**********************************************
+****************************************************************************************************************************************
 
 
-***************** GUI VERSION **************************************************
+************************************************************** GUI VERSION *************************************************************
 
 At the first window that pops up, choose which version to run.
 
@@ -73,36 +73,36 @@ Step 2. Input number of images to train with (Second field)
 Step 3. Press EFFECT OF K and observe graph
 Step 4. When done, press CLOSE
 
-**********************************************************************************
+*****************************************************************************************************************************************
 
 
-***************** NON-GUI VERSION (NOT RECOMENDED) ******************************
+*********************************************** NON-GUI VERSION (NOT RECOMENDED) ********************************************************
 
 Step 1. Open the directory called knn.
 Step 2. There you can run the functions knnAll.m, knnGraph.m and knnSingle.m
 
 (Still do the Where to start steps to import data)
 
-*********************************************************************************
+*****************************************************************************************************************************************
 
 
-***************** OUTPUT FILES **************
+************************************************************** OUTPUT FILES ***********************************************************
 
 1. ???stats.txt???: Results from the BASIC TESTING in GUI or from function knnAll.m in NON-GUI
 
-*********************************************
+***************************************************************************************************************************************
 
 
-***************** MAIN FUNCTION/SCRIPTS *************************************
+************************************************************** MAIN FUNCTION/SCRIPTS **************************************************
 
 1. saveDataset.m: Found in main directory, this function basically pulls all the data reading functions and saves the two structures on the workspace as ???mnistdata.mat???.
 
 2. startGUIProcess.m: This function launches the GUI. From then on, the user does not have to directly interact with functions and scripts if he wants.
 
-*****************************************************************************
+***************************************************************************************************************************************
 
 
-**************** DATA READING FUNCTIONS *****************************************
+************************************************************* DATA READING FUNCTIONS **************************************************
 
 These functions are found in the folder dataPrep. They are not explicitly called by user so can be labeled as ???helper functions???.
 
@@ -120,10 +120,10 @@ These functions are found in the folder dataPrep. They are not explicitly called
 
 7. outline.m: Extracts the outline of the number in the image
 
-********************************************************************************
+***************************************************************************************************************************************
 
 
-******************** K NEAREST NEIGHBORS FUNCTIONS ******************************
+************************************************** K NEAREST NEIGHBORS FUNCTIONS ******************************************************
 
 1. knnAll.m: This function classifies test data against training data taken from the two structures, training and testing. The user chooses how many of each to use. If he does not choose, default values are used. The results are saved in the output file called ???stats.txt???. This is one of the functions the user can directly call in the non GUI version.
 
@@ -146,10 +146,10 @@ So, a sample function call would be:
 
 5. knnStats.m: Prints stats to file (implicitly called by knnAll.m)
 
-*********************************************************************************
+*****************************************************************************************************************************************
 
 
-******************** Some sample function calls to do in NON GUI ****************
+*********************************************** Some sample function calls to do in NON GUI *********************************************
 In knn directory
 
 -knnAll(training, testing, 3)
@@ -164,7 +164,7 @@ Check result using testing.labels(6)
 -knnSingle(training, testing.images(:,:,128), 7, true)
 Check result using testing.labels(128)
 
-********************************************************************************
+****************************************************************************************************************************************
 
 
 Have fun and if you are unsure about how to run something, email me at mitsopouloschris@gmail.com
