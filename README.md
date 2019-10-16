@@ -48,12 +48,12 @@ Step 2. Input number of images to train with (Second field)
 Step 3. Press EFFECT OF K and observe graph
 Step 4. When done, press CLOSE
 
-## How it works: main functions
+## How it works: main Scripts
 
 - saveDataset.m: Found in main directory, this function basically pulls all the data reading functions and saves the two structures on the workspace as mnistdata.mat.
 - startGUIProcess.m: This function launches the GUI. From then on, the user does not have to directly interact with functions and scripts if he wants.
 
-### I/O functions
+### I/O
 - loadImg.m: Imports the images from the raw MNIST files ???test-images??? and ???train-images???
 - loadlbl.m: Imports the labels from the raw MNIST files ???test-labels??? and ???train-labels???
 - readData.m: Calls the previous two functions and stores them in a structure containing he number of images, the width, the height of each images, the array of all images and the vector of labels.
@@ -62,7 +62,7 @@ Step 4. When done, press CLOSE
 - binarize.m: Binarizes an image through thresholding
 - outline.m: Extracts the outline of the number in the image
 
-### Classification functions
+### Classification
 
 - knnAll.m: This function classifies test data against training data taken from the two structures, training and testing. The user chooses how many of each to use. If he does not choose, default values are used. The results are saved in the output file called stats.txt.
 - knnGraph.m: This function classifies testing images, after being trained by training images, for various values of k. The accuracy with respect to value of k is then plotted in a graph. Use small values or else run time will be really long.
