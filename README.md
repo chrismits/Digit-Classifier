@@ -1,9 +1,4 @@
 ## Overview
-
-Topic: Classifying handwritten digits
-Author: Christos-Nikolaos Mitsopoulos
-Date: 06/10/2017
-
 This project contains scripts that classify handwritten digits by implementing the k-nearest neighbours algorithm as well as some basic image processing.
 
 ### Demo
