@@ -1,7 +1,7 @@
 ## Overview
 This project contains scripts that classify handwritten digits by implementing the k-nearest neighbours algorithm as well as some basic image processing.
 
-### Demo
+### Demo Video
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=0cHgmif84_Y
 " target="_blank"><img src="http://img.youtube.com/vi/0cHgmif84_Y/0.jpg" 
 alt="Video Sample run" width="240" height="180" border="10" /></a>
