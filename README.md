@@ -5,6 +5,9 @@ This project contains scripts that classify handwritten digits by implementing t
 
 A sample run video can be seen here: https://www.youtube.com/watch?v=0cHgmif84_Y 
 
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=0cHgmif84_Y
+" target="_blank"><img src="http://img.youtube.com/vi/0cHgmif84_Y/0.jpg" 
+alt="Video Sample run" width="240" height="180" border="10" /></a>
 
 ### Disclaimer
 I strongly recommend using the GUI form of this project (details on how to run it below). Also, different computers display the GUI window with different sizes. For best performance and easy image selection, make the window pretty large (about the size of that in the sample video).
